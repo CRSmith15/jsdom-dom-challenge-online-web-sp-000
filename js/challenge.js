@@ -26,7 +26,7 @@ document.getElementById("heart").addEventListener("click", function(){
   let node = document.createTextNode(i + " has been liked " + x + " time(s).");
   let likes = document.querySelector(".likes").lastChild;
   li.appendChild(node);
-  if (j > 1){
+  if (x > 1){
     lastLike.replaceWith(li)
   } else {
     likes.appendChild(li);
