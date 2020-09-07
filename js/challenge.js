@@ -1,6 +1,6 @@
 let i =-1;
 let j = 0;
-const interval = setInterval( increment, 1000);
+let interval = setInterval( increment, 1000);
 function increment(){
     i++;
     document.querySelector('h1#counter').textContent = i;
@@ -52,10 +52,10 @@ document.getElementById("pause").addEventListener("click", function(){
 
 document.getElementById("submit").addEventListener("click", function(event){
   event.preventDefault();
-  var comment = document.querySelector('input#comment-input').value
-  var commentsList = document.querySelector('.comments')
-  var p = document.createElement("p");
-  var node = document.createTextNode(comment)
+  let comment = document.querySelector('input#comment-input').value
+  let commentsList = document.querySelector('.comments')
+  let p = document.createElement("p");
+  let node = document.createTextNode(comment)
   p.appendChild(node);
   commentsList.appendChild(p);
   document.querySelector('input#comment-input').value = ''
