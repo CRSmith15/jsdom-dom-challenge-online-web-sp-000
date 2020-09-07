@@ -9,3 +9,8 @@ function increment(){
 }
 
 increment();
+
+document.getElementById("minus").addEventListener("click", function(){
+  i--;
+  document.querySelector("h1#counter").innerHTML = i;
+});
