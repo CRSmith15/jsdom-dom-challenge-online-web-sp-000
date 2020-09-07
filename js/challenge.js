@@ -23,11 +23,11 @@ document.getElementById("plus").addEventListener("click", function(){
 document.getElementById("heart").addEventListener("click", function(){
   x++;
   let li = document.createElement("li");
-  let node = document.createTextNode(i + " has been liked " + x + " time(s).")
-  let likes = document.querySelector(".likes").lastChild
+  let node = document.createTextNode(i + " has been liked " + x + " time(s).");
+  let likes = document.querySelector(".likes").lastChild;
   li.appendChild(node);
   if (x > 1){
-    lastLike.replaceWith(li)
+    lastLike.replaceWith(li;
   } else {
     likes.appendChild(li);
   }
