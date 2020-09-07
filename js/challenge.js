@@ -1,6 +1,6 @@
-var i =-1;
-var j = 0;
-var interval = setInterval( increment, 1000);
+let i =-1;
+let j = 0;
+const interval = setInterval( increment, 1000);
 function increment(){
     i++;
     document.querySelector('h1#counter').textContent = i;
@@ -20,10 +20,10 @@ document.getElementById("plus").addEventListener("click", function(){
 
 document.getElementById("heart").addEventListener("click", function(){
   j++;
-  var li = document.createElement("li");
-  var node = document.createTextNode(i + " has been liked " + j + " time(s).")
-  var likes = document.querySelector('.likes')
-  var lastLike = document.querySelector('.likes').lastChild
+  let li = document.createElement("li");
+  let node = document.createTextNode(i + " has been liked " + j + " time(s).")
+  let likes = document.querySelector('.likes')
+  let lastLike = document.querySelector('.likes').lastChild
   li.appendChild(node);
   if(j>1){
    lastLike.replaceWith(li)
