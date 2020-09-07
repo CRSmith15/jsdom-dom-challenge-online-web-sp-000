@@ -14,3 +14,8 @@ document.getElementById("minus").addEventListener("click", function(){
   i--;
   document.querySelector("h1#counter").innerHTML = i;
 });
+
+document.getElementById("plus").addEventListener("click", function(){
+  i++;
+  document.querySelector("h1#counter").innerHTML = i;
+});
