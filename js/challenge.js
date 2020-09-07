@@ -27,7 +27,7 @@ document.getElementById("heart").addEventListener("click", function(){
   let likes = document.querySelector(".likes").lastChild;
   li.appendChild(node);
   if (x > 1){
-    lastLike.replaceWith(li)
+    lastLike.replaceWith(li);
   } else {
     likes.appendChild(li);
   }
